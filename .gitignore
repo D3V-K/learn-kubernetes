@@ -1,0 +1,24 @@
+# This directory doubles as the Vagrant VM's home dir (synced_folder ".", "/home/vagrant"),
+# so it accumulates machine-local state that must never be committed.
+
+# Secrets / credentials
+.ssh/
+*.pem
+id_rsa
+id_rsa.pub
+
+# Kubeconfig (may contain cluster certs/tokens) and its local cache
+.kube/
+
+# Shell / editor / package caches, history
+.bash_history
+.viminfo
+.inputrc
+.cache/
+.sudo_as_admin_successful
+
+# Vagrant local state
+.vagrant/
+
+# Vendored third-party release (download instead of committing)
+istio-*/
